@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="533" id="YGg-Ov-x5K" customClass="ExtendedPostCell" customModule="Koombea_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="506"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YGg-Ov-x5K" id="z6d-aE-bxZ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="506"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JKc-r9-xB6">
+                        <rect key="frame" x="8" y="12" width="40" height="40"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="6Lm-qA-KHJ"/>
+                            <constraint firstAttribute="height" constant="40" id="8aK-TD-0qp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yV7-UH-VAl">
+                        <rect key="frame" x="56" y="12" width="214.5" height="19"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQT-VG-FaJ">
+                        <rect key="frame" x="56" y="33" width="214.5" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWT-5s-6Ek">
+                        <rect key="frame" x="278.5" y="22.5" width="33.5" height="19"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1pI-qn-lZo">
+                        <rect key="frame" x="8" y="60" width="304" height="433.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MVU-3r-m0O" customClass="RemoteImageView" customModule="Koombea_Test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="304"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MVU-3r-m0O" secondAttribute="height" id="ejH-0C-DXi"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5oy-mj-trZ">
+                                <rect key="frame" x="0.0" y="312" width="304" height="121.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5oy-mj-trZ" secondAttribute="height" multiplier="5:2" id="GMs-Mx-u0j"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Apm-fO-48T">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1pI-qn-lZo" firstAttribute="leading" secondItem="z6d-aE-bxZ" secondAttribute="leading" constant="8" id="3En-S8-gJD"/>
+                    <constraint firstItem="yV7-UH-VAl" firstAttribute="top" secondItem="z6d-aE-bxZ" secondAttribute="top" constant="12" id="3mp-S4-9Fe"/>
+                    <constraint firstItem="UQT-VG-FaJ" firstAttribute="top" secondItem="yV7-UH-VAl" secondAttribute="bottom" constant="2" id="7yW-hJ-o6C"/>
+                    <constraint firstItem="JKc-r9-xB6" firstAttribute="leading" secondItem="z6d-aE-bxZ" secondAttribute="leading" constant="8" id="Cga-8Y-K1s"/>
+                    <constraint firstAttribute="bottom" secondItem="1pI-qn-lZo" secondAttribute="bottom" priority="750" constant="12" id="Cn8-E9-uZT"/>
+                    <constraint firstItem="yWT-5s-6Ek" firstAttribute="centerY" secondItem="JKc-r9-xB6" secondAttribute="centerY" id="FSg-xS-bJf"/>
+                    <constraint firstAttribute="trailing" secondItem="1pI-qn-lZo" secondAttribute="trailing" constant="8" id="OAB-ij-qTk"/>
+                    <constraint firstItem="yWT-5s-6Ek" firstAttribute="leading" secondItem="UQT-VG-FaJ" secondAttribute="trailing" constant="8" id="UGq-qk-zcJ"/>
+                    <constraint firstAttribute="trailing" secondItem="yWT-5s-6Ek" secondAttribute="trailing" constant="8" id="X4g-ZZ-Eb9"/>
+                    <constraint firstItem="yWT-5s-6Ek" firstAttribute="leading" secondItem="yV7-UH-VAl" secondAttribute="trailing" constant="8" id="YGv-tI-0tu"/>
+                    <constraint firstItem="JKc-r9-xB6" firstAttribute="top" secondItem="z6d-aE-bxZ" secondAttribute="top" constant="12" id="Yg0-WI-HxE"/>
+                    <constraint firstItem="yV7-UH-VAl" firstAttribute="leading" secondItem="JKc-r9-xB6" secondAttribute="trailing" constant="8" id="hZX-aX-tqx"/>
+                    <constraint firstItem="1pI-qn-lZo" firstAttribute="top" secondItem="JKc-r9-xB6" secondAttribute="bottom" constant="8" id="la9-Wa-oG1"/>
+                    <constraint firstItem="UQT-VG-FaJ" firstAttribute="leading" secondItem="JKc-r9-xB6" secondAttribute="trailing" constant="8" id="snl-Gk-DAd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="cbZ-Mb-L3Q"/>
+            <connections>
+                <outlet property="dateLabel" destination="yWT-5s-6Ek" id="yn5-Vv-Gw1"/>
+                <outlet property="emailLabel" destination="UQT-VG-FaJ" id="ki3-8t-NyR"/>
+                <outlet property="mainPicImageView" destination="MVU-3r-m0O" id="mAJ-aP-s0N"/>
+                <outlet property="nameLabel" destination="yV7-UH-VAl" id="tT7-Mm-0QP"/>
+                <outlet property="picsCollectionView" destination="5oy-mj-trZ" id="hTf-Wc-rvP"/>
+                <outlet property="pictureImageView" destination="JKc-r9-xB6" id="o5L-yO-BfD"/>
+            </connections>
+            <point key="canvasLocation" x="-176.81159420289856" y="-21.428571428571427"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

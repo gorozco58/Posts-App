@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="169" id="KGk-i7-Jjw" customClass="NormalPostCell" customModule="Koombea_Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="169"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="169"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N9E-ru-53z">
+                        <rect key="frame" x="8" y="12" width="40" height="40"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="QQY-Oy-GA4"/>
+                            <constraint firstAttribute="width" constant="40" id="hQn-gO-t7v"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mu-97-PDX">
+                        <rect key="frame" x="56" y="12" width="214.5" height="19"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeI-1l-Xea">
+                        <rect key="frame" x="56" y="33" width="214.5" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyO-gl-xce">
+                        <rect key="frame" x="278.5" y="22.5" width="33.5" height="19"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Vrm-5O-gEc">
+                        <rect key="frame" x="8" y="60" width="304" height="97"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vrm-5O-gEc" firstAttribute="top" secondItem="N9E-ru-53z" secondAttribute="bottom" constant="8" id="Chl-jY-7Uf"/>
+                    <constraint firstAttribute="trailing" secondItem="Vrm-5O-gEc" secondAttribute="trailing" constant="8" id="HFo-a4-hf6"/>
+                    <constraint firstItem="5mu-97-PDX" firstAttribute="leading" secondItem="N9E-ru-53z" secondAttribute="trailing" constant="8" id="HXG-Ko-YK2"/>
+                    <constraint firstItem="zyO-gl-xce" firstAttribute="centerY" secondItem="N9E-ru-53z" secondAttribute="centerY" id="L5r-BW-MlT"/>
+                    <constraint firstAttribute="bottom" secondItem="Vrm-5O-gEc" secondAttribute="bottom" constant="12" id="MYt-m8-7r1"/>
+                    <constraint firstAttribute="trailing" secondItem="zyO-gl-xce" secondAttribute="trailing" constant="8" id="RD0-Kn-lF6"/>
+                    <constraint firstItem="N9E-ru-53z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Vkr-MZ-4Eu"/>
+                    <constraint firstItem="N9E-ru-53z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="XsC-qx-rjs"/>
+                    <constraint firstItem="ZeI-1l-Xea" firstAttribute="top" secondItem="5mu-97-PDX" secondAttribute="bottom" constant="2" id="cLK-N6-SJf"/>
+                    <constraint firstItem="Vrm-5O-gEc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="izM-R4-99l"/>
+                    <constraint firstItem="5mu-97-PDX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="rYh-Ca-YDi"/>
+                    <constraint firstItem="zyO-gl-xce" firstAttribute="leading" secondItem="ZeI-1l-Xea" secondAttribute="trailing" constant="8" id="wwh-Rr-tmM"/>
+                    <constraint firstItem="zyO-gl-xce" firstAttribute="leading" secondItem="5mu-97-PDX" secondAttribute="trailing" constant="8" id="z9f-M9-y6Y"/>
+                    <constraint firstItem="ZeI-1l-Xea" firstAttribute="leading" secondItem="N9E-ru-53z" secondAttribute="trailing" constant="8" id="zQb-Ei-Vk8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="zyO-gl-xce" id="FTc-sJ-tPe"/>
+                <outlet property="emailLabel" destination="ZeI-1l-Xea" id="W8U-CT-QXB"/>
+                <outlet property="nameLabel" destination="5mu-97-PDX" id="4K1-Is-Hbc"/>
+                <outlet property="picsStackView" destination="Vrm-5O-gEc" id="0Yc-pD-nj7"/>
+                <outlet property="pictureImageView" destination="N9E-ru-53z" id="i9Q-zX-Wl5"/>
+            </connections>
+            <point key="canvasLocation" x="169.56521739130437" y="94.754464285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
